@@ -6,12 +6,16 @@ using Blog.Data;
 using Blog.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigureAuthentication(builder);
 ConfigureMvc(builder);
 ConfigureServices(builder);
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 LoadConfiguration(app);
@@ -23,13 +27,10 @@ app.MapControllers();
 app.UseStaticFiles();
 app.UseResponseCompression();
 
-if (app.Environment.IsProduction())
+if (app.Environment.IsDevelopment())
 {
-    Console.WriteLine("Estou no ambiente de produção!");
-}
-else if (app.Environment.IsDevelopment())
-{
-    Console.WriteLine("Estou no ambiente de Desenvolvimento!");
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.Run();
@@ -81,13 +82,15 @@ void ConfigureMvc(WebApplicationBuilder builder)
         .AddJsonOptions(x =>
         {
             x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-            x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault; // anotar pra estudar essa linha depois
+            x.JsonSerializerOptions.DefaultIgnoreCondition =
+                JsonIgnoreCondition.WhenWritingDefault; // anotar pra estudar essa linha depois
         });
 }
 
 void ConfigureServices(WebApplicationBuilder builder)
 {
-    builder.Services.AddDbContext<BlogDataContext>();
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    builder.Services.AddDbContext<BlogDataContext>(option => option.UseSqlServer(connectionString));
     builder.Services.AddTransient<TokenService>();
     builder.Services.AddTransient<EmailService>();
 }

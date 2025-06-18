@@ -1,5 +1,6 @@
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/appsettings.Development.json
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/appsettings.json
+/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Blog.staticwebassets.runtime.json
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Blog
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Blog.deps.json
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Blog.runtimeconfig.json
@@ -19,8 +20,12 @@
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/SecureIdentity.dll
+/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/System.Drawing.Common.dll
 /home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
@@ -49,7 +54,9 @@
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.AssemblyInfoInputs.cache
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.AssemblyInfo.cs
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.csproj.CoreCompileInputs.cache
+/home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.MvcApplicationPartsAssemblyInfo.cs
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.MvcApplicationPartsAssemblyInfo.cache
+/home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.sourcelink.json
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/staticwebassets.build.json
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/staticwebassets.development.json
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/staticwebassets/msbuild.Blog.Microsoft.AspNetCore.StaticWebAssets.props
@@ -64,4 +71,3 @@
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.pdb
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/Blog.genruntimeconfig.cache
 /home/jondev/www/2811/Modulo 5/Blog/obj/Debug/net6.0/ref/Blog.dll
-/home/jondev/www/2811/Modulo 5/Blog/bin/Debug/net6.0/Blog.staticwebassets.runtime.json
